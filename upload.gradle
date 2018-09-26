@@ -61,7 +61,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"        // 你在bintray上创建的库的名称
-        name = "$group:$module_name"              // 在jcenter中的项目名称
+        name = "${group}:${module_name}"              // 在jcenter中的项目名称
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
